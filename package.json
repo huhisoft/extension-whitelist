@@ -1,0 +1,33 @@
+{
+  "name": "extension-whitelist",
+  "version": "1.0.0",
+  "description": "C++ extension whitelist parser for Huhi",
+  "main": "./build/Release/aw_node_addon",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "preinstall": "npm install hashset-cpp",
+    "data-files": "node ./scripts/gen_data_file.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhisoft/extension-whitelist.git"
+  },
+  "author": "Huy Nguyen <huynq.cntt@gmail.com>",
+  "license": "MPL-2.0",
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/huhisoft/extension-whitelist/issues"
+  },
+  "homepage": "https://github.com/huhisoft/extension-whitelist#readme",
+  "dependencies": {
+    "hashset-cpp": "^2.2.1",
+    "node-gyp": "^5.0.3"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}
